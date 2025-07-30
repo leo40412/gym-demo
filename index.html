@@ -46,6 +46,35 @@
             background-color: aqua;
             text-align: center;
         }
+
+        h2 {
+            display: inline-block;
+            width: 400px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid darkblue;
+        }
+
+        form {
+            display: inline-block;
+            width: 500px;
+            margin: 0 auto;
+            background-color: rgb(128, 183, 228);
+            border-radius: 6px;
+            border: 1px solid black;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(205, 219, 126);
+            width: 60px;
+            height: 30;
+            border: none;
+            border-radius: 6px;
+        }
     </style>
 
 </head>
@@ -152,40 +181,44 @@
     </div>
     <hr>
     <h2 class="sub-title">健身影片</h2>
-    <iframe width="45%" height="500" src="https://www.youtube.com/embed/TtbrOIUYtGw"
-        title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+        <iframe width="45%" height="500" src="https://www.youtube.com/embed/TtbrOIUYtGw"
+            title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <iframe width="45%" height="500" src="https://www.youtube.com/embed/LmrKejHOaG4"
-        title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="45%" height="500" src="https://www.youtube.com/embed/LmrKejHOaG4"
+            title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <video controls src="video/file_example_MP4_640_3MG.mp4"></video>
+        <!--video controls src="video/file_example_MP4_640_3MG.mp4"></video-->
+    </div>
     <hr>
     <h2 class="sub-title">表單</h2>
-    <h3>需要更多資訊?免費索取健身資訊</h3>
-    <p>前100名還贈送［我愛健身］書籍一本!</p>
+    <div>
+        <h3>需要更多資訊?免費索取健身資訊</h3>
+        <p>前100名還贈送［我愛健身］書籍一本!</p>
 
-    <form action="">
-        <input type="checkbox" name="age">18歲
-        <select name="county" id="">
-            <option value="台北市">台北市</option>
-            <option value="新北市">新北市</option>
-            <option value="桃園市">桃園市</option>
-            <option value="新竹市">新竹市</option>
-            <option value="台中市">台中市</option>
-            <option value="高雄市">高雄市</option>
+        <form action="">
+            <input type="checkbox" name="age">18歲
+            <select name="county" id="">
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="台中市">台中市</option>
+                <option value="高雄市">高雄市</option>
 
-        </select>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="test@gmail.com">
-        <p>您的寶貴意見:</p>
-        <textarea id="comment" name="comment" cols="30" rows="20"></textarea>
-        <br>
-        <button type="submit">送出</button>
-    </form>
+            </select>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="test@gmail.com">
+            <p>您的寶貴意見:</p>
+            <textarea id="comment" name="comment" cols="30" rows="20"></textarea>
+            <br>
+            <button type="submit">送出</button>
+        </form>
+    </div>
 </body>
 
 </html>
