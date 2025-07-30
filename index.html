@@ -8,11 +8,43 @@
         body {
             text-align: center;
             background-color: rgb(215, 212, 201);
+            font-family: 標楷體, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
         .sub-title {
             background-color: rgb(227, 159, 70);
             color: azure;
+        }
+
+        .contect {
+            background-color: darkkhaki;
+            padding: 36px 24px;
+        }
+
+        #image {
+            border: 2px, black, solid;
+            background-color: beige;
+        }
+
+        #image img {
+            margin: 12px;
+            width: 28%;
+            border-radius: 12px;
+        }
+
+        #bmiTable {
+            width: 60%;
+            height: 400px;
+            margin: 12px auto;
+        }
+
+        #bmiTable th {
+            background-color: cornsilk;
+        }
+
+        #bmiTable td {
+            background-color: aqua;
+            text-align: center;
         }
     </style>
 
@@ -22,19 +54,26 @@
     <!-- 內容區 -->
     <h1 style="background-color: rgb(165, 93, 42);color: aliceblue;">何謂健身?</h1>
     <img width="100%" src="https://img.88icon.com/download/jpg/201911/3ec29f60ce18f9017a72a867455aa606.jpg!con" alt="">
-    <h3>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>
-        通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>
-        以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-    </h3>
 
-    <p>
-        <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。<br>
-            如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在<br>
-            舞臺上或者是電影螢幕上綻放光彩。</em>
-        <br>
-        <b><u>答案就是堅持運動健身!</u></b>
+    <div class="contect">
 
-    </p>
+        <h3>
+            健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>
+            通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>
+            以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+        </h3>
+
+        <p>
+            <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。<br>
+                如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在<br>
+                舞臺上或者是電影螢幕上綻放光彩。</em>
+            <br>
+            <b><u>答案就是堅持運動健身!</u></b>
+
+        </p>
+
+    </div>
+
     <hr>
     <h2 class="sub-title">健身的10個好處</h2>
     <ol type="1" style="text-align: left;">
@@ -69,7 +108,7 @@
     </li>
     <hr>
     <h2 class="sub-title">一天所需卡路里</h2>
-    <table border="1">
+    <table border="1" id="bmiTable">
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -99,14 +138,18 @@
             </tr>
         </tbody>
     </table>
-    <p><b><a href="bmi.html">計算BMI:&nbsp;</b></a>一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-        <b>計算所需熱量:&nbsp;</b>因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
-    </p>
+    <div style="text-align: left;margin-left: 24px;">
+        <p><b><a href="bmi.html">計算BMI:&nbsp;</b></a>一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+            <b>計算所需熱量:&nbsp;</b>因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+        </p>
+    </div>
     <hr>
     <h2 class="sub-title">健身照片</h2>
-    <img width="32%" src="img/pic-1.jpg" alt="">
-    <img width="32%" src="img/pic-2.jpg" alt="">
-    <img width="32%" src="img/pic-3.jpg" alt="">
+    <div id="image">
+        <img src="img/pic-1.jpg" alt="">
+        <img src="img/pic-2.jpg" alt="">
+        <img src="img/pic-3.jpg" alt="">
+    </div>
     <hr>
     <h2 class="sub-title">健身影片</h2>
     <iframe width="45%" height="500" src="https://www.youtube.com/embed/TtbrOIUYtGw"
